@@ -4,17 +4,17 @@ Microsoft Lyngby - 21. January 2020
 This site contains links and content from the workshop.
 
 # STUDENT EVALUTION LINK 
-Kom gerne med jeres feedback. Nu er det første gang denne workshop er afholdt og holdet er godt blandet mellem både SMB og Enterprise segmentet.<br>
+Kom gerne med jeres feedback. Nu er det første gang denne workshop er afholdt og holdet er godt blandet mellem både SMB og Enterprise segmentet.<br><br>
 https://globalknowledge.az1.qualtrics.com/jfe/form/SV_2l9xxtKvLOyJCKN?EVENTID=DK61419 
 
 
 
 # Windows Virtual Desktop Documentation
 Tenant and host pool creation:<br> https://docs.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-set-up-issues<br>
-<br>Subscritpion CPU limitation:<br>https://github.com/MicrosoftDocs/azure-docs/pull/41360
-<br>Tenant creation link:<br> https://docs.microsoft.com/en-us/azure/virtual-desktop/tenant-setup-azure-active-directory#create-a-windows-virtual-desktop-tenant
-<br>Consent page:<br> https://rdweb.wvd.microsoft.com/
-<br>RTT Estimator:<br> https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/
+<br>Subscritpion CPU limitation:<br>https://github.com/MicrosoftDocs/azure-docs/pull/41360<br>
+<br>Tenant creation link:<br> https://docs.microsoft.com/en-us/azure/virtual-desktop/tenant-setup-azure-active-directory#create-a-windows-virtual-desktop-tenant<br>
+<br>Consent page:<br> https://rdweb.wvd.microsoft.com/<br>
+<br>RTT Estimator:<br> https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/<br>
 
 # WVD Web Clients: 
 https://rdweb.wvd.microsoft.com/webclient/index.html
@@ -51,6 +51,6 @@ https://signup.microsoft.com/Signup?OfferId=B07A1127-DE83-4a6d-9F85-2C104BDAE8B4
 12. Deploy Windows Virtual Desktop
 
 # Lock Screen after some minutes and manage CA/SM
-https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-machine-inactivity-limit <br>
-https://docs.microsoft.com/da-dk/azure/active-directory/conditional-access/ <br>
-https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime<br>
+https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/<br>interactive-logon-machine-inactivity-limit <br><br>
+https://docs.microsoft.com/da-dk/azure/active-directory/conditional-access/ <br><br>
+https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime<br><br>
