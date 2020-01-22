@@ -60,6 +60,12 @@ https://docs.microsoft.com/en-us/windows/security/threat-protection/security-pol
 https://docs.microsoft.com/da-dk/azure/active-directory/conditional-access/ <br><br>
 https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime<br><br>
 
+# Example of Image Capture with FSLogix
+https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/virtual-desktop/set-up-customize-master-image.md
+
+# ARM Template for Hostpool creation
+https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool
+
 # Troubleshooting Tracking ID 
 <br>
 Looking Tracking ID
