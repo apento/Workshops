@@ -7,8 +7,6 @@ This site contains links and content from the workshop.
 Kom gerne med jeres feedback. Nu er det første gang denne workshop er afholdt og holdet er godt blandet mellem både SMB og Enterprise segmentet.<br><br>
 https://globalknowledge.az1.qualtrics.com/jfe/form/SV_2l9xxtKvLOyJCKN?EVENTID=DK61419 
 
-
-
 # Windows Virtual Desktop Documentation
 Tenant and host pool creation:<br> https://docs.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-set-up-issues<br>
 <br>Subscritpion CPU limitation:<br>https://github.com/MicrosoftDocs/azure-docs/pull/41360<br>
@@ -16,8 +14,15 @@ Tenant and host pool creation:<br> https://docs.microsoft.com/en-us/azure/virtua
 <br>Consent page:<br> https://rdweb.wvd.microsoft.com/<br>
 <br>RTT Estimator:<br> https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/<br>
 
-# WVD Web Clients: 
-https://rdweb.wvd.microsoft.com/webclient/index.html
+# Community Links:
+How to implement and manage Azure AD Domain Services (Azure AD DS) for a fast Windows Virtual Desktop (WVD) PoC deployment:<br>
+https://www.robinhobo.com/how-to-implement-and-manage-azure-ad-domain-services-azure-ad-ds-for-a-fast-windows-virtual-desktop-wvd-poc-deployment/<br>
+
+# WVD Clients: 
+Connect with the Windows Desktop client<br>
+https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-and-10 <br><br>
+Connect with the web client<br>
+https://rdweb.wvd.microsoft.com/webclient/index.html <br>
 
 # AzurePass
 Claim your Azure Passcode credits here:<br>
