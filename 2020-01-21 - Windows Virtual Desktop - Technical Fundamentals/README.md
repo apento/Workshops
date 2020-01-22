@@ -5,7 +5,7 @@ This site contains links and content from the workshop.
 
 
 # AzurePass
-Claim your Azure Passcode credits here:
+Claim your Azure Passcode credits here:<br>
 https://www.microsoftazurepass.com/
 https://www.microsoftazurepass.com/Home/HowTo?Length=5
 
