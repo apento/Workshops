@@ -95,3 +95,5 @@ New-RdsRemoteApp -TenantName "WorkshopWVD" -HostPoolName "wvd" -AppGroupName "My
 #Add-RdsAppGroupUser -TenantName "WorkshopWVD" -HostPoolName "wvd" -AppGroupName "MyApps" -UserPrincipalName wvd@m365x613536.onmicrosoft.com
 
 
+# App Attach
+https://docs.microsoft.com/en-us/azure/virtual-desktop/app-attach
