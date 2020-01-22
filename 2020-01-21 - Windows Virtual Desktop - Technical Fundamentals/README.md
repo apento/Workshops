@@ -65,3 +65,12 @@ https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto
 Looking Tracking ID
 <br>
 https://docs.microsoft.com/en-us/azure/virtual-desktop/diagnostics-role-service
+
+
+Get-RdsDiagnosticActivities -TenantName <tenantname> -ActivityType Connection -ActivityId 9d866d31-9fbe-47e5-a3bd-4950aafe0000 -Detailed
+
+
+You can also break some of the info out to look at details and errors using:
+
+(Get-RdsDiagnosticActivities -TenantName <tenantname> -ActivityType Connection -ActivityId 9d866d31-9fbe-47e5-a3bd-4950aafe0000 -Detailed).Errors
+(Get-RdsDiagnosticActivities -TenantName <tenantname> -ActivityType Connection -ActivityId 9d866d31-9fbe-47e5-a3bd-4950aafe0000 -Detailed).Details
