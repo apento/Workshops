@@ -4,17 +4,17 @@ Microsoft Lyngby - 21. January 2020
 This site contains links and content from the workshop.
 
 # STUDENT EVALUTION LINK 
-Kom gerne med jeres feedback. Nu er det første gang denne workshop er afholdt og holdet er godt blandet mellem både SMB og Enterprise segmentet.
+Kom gerne med jeres feedback. Nu er det første gang denne workshop er afholdt og holdet er godt blandet mellem både SMB og Enterprise segmentet.<br>
 https://globalknowledge.az1.qualtrics.com/jfe/form/SV_2l9xxtKvLOyJCKN?EVENTID=DK61419 
 
 
 
 # Windows Virtual Desktop Documentation
-Tenant and host pool creation - https://docs.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-set-up-issues<br>
-<br>Subscritpion CPU limitation - https://github.com/MicrosoftDocs/azure-docs/pull/41360
-<br>Tenant creation link: https://docs.microsoft.com/en-us/azure/virtual-desktop/tenant-setup-azure-active-directory#create-a-windows-virtual-desktop-tenant
-<br>Consent page - https://rdweb.wvd.microsoft.com/
-<br>RTT Estimator - https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/
+Tenant and host pool creation:<br> https://docs.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-set-up-issues<br>
+<br>Subscritpion CPU limitation:<br>https://github.com/MicrosoftDocs/azure-docs/pull/41360
+<br>Tenant creation link:<br> https://docs.microsoft.com/en-us/azure/virtual-desktop/tenant-setup-azure-active-directory#create-a-windows-virtual-desktop-tenant
+<br>Consent page:<br> https://rdweb.wvd.microsoft.com/
+<br>RTT Estimator:<br> https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/
 
 # WVD Web Clients: 
 https://rdweb.wvd.microsoft.com/webclient/index.html
