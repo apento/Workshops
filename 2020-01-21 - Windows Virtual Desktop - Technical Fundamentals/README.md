@@ -83,3 +83,15 @@ You can also break some of the info out to look at details and errors using:
 
 (Get-RdsDiagnosticActivities -TenantName <tenantname> -ActivityType Connection -ActivityId 9d866d31-9fbe-47e5-a3bd-4950aafe0000 -Detailed).Errors
 (Get-RdsDiagnosticActivities -TenantName <tenantname> -ActivityType Connection -ActivityId 9d866d31-9fbe-47e5-a3bd-4950aafe0000 -Detailed).Details
+
+
+# PowerShell Remote Apps
+
+New-RdsAppGroup -TenantName "WorkshopWVD" -HostPoolName "wvd" -Name "MyApps" -ResourceType RemoteApp
+Get-RdsStartMenuApp -TenantName "WorkshopWVD" -HostPoolName "wvd" -AppGroupName "MyApp"
+New-RdsRemoteApp -TenantName "WorkshopWVD" -HostPoolName "wvd" -AppGroupName "MyApps" -Name "MSPaint" -FilePath "C:\windows\system32\mspaint.exe"
+
+#Remove-RdsAppGroup -TenantName "WorkshopWVD" -HostPoolName "wvd" -Name "Desktop Application Group"
+#Add-RdsAppGroupUser -TenantName "WorkshopWVD" -HostPoolName "wvd" -AppGroupName "MyApps" -UserPrincipalName wvd@m365x613536.onmicrosoft.com
+
+
