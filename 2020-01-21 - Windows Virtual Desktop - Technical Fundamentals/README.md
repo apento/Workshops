@@ -59,3 +59,9 @@ https://signup.microsoft.com/Signup?OfferId=B07A1127-DE83-4a6d-9F85-2C104BDAE8B4
 https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-machine-inactivity-limit <br><br>
 https://docs.microsoft.com/da-dk/azure/active-directory/conditional-access/ <br><br>
 https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime<br><br>
+
+# Troubleshooting Tracking ID 
+<br>
+Looking Tracking ID
+<br>
+https://docs.microsoft.com/en-us/azure/virtual-desktop/diagnostics-role-service
