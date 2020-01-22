@@ -1,0 +1,94 @@
+#Install PowerShell modules
+##################################################################
+#Install-Module -Name Microsoft.RDInfra.RDPowerShell
+Import-Module -Name Microsoft.RDInfra.RDPowerShell
+
+# Setting Deployment context
+$brokerurl = "https://rdbroker.wvd.microsoft.com" # Don't change the deploymenturl
+
+# Use any name for your tenant, get your ID from Azure portal > Azure Active Directory > Properties > Directory ID. To get your SubscriptionID, go to Azure Portal > All services > subscriptions > click the subscription where the VM's will reside and copy the subscription ID:
+$aadTenantId = "ac3cfed8-c7d2151-4adad3a6e2b7"
+$azureSubscriptionId = "9f4afba-94fd-b512227d690b"
+Add-RdsAccount -DeploymentUrl $brokerurl
+
+#################################################################
+
+# NEW  RDS Tenant
+New-RdsTenant -Name apento.onmicrosoft.com -AadTenantId $aadTenantId -AzureSubscriptionId $azureSubscriptionId
+
+#################################################################
+
+
+# Add Service Principal
+#################################################################
+$myTenantGroupName = "Default Tenant Group"
+$myTenantName = "apento.onmicrosoft.com" #As you used in the previous step
+$hostpoolname = "APENTO"
+
+# create the service principal:
+$aadContext = Connect-AzureAD
+$svcPrincipal = New-AzureADApplication -AvailableToOtherTenants $true -DisplayName "Windows Virtual Desktop Svc Principal"
+$svcPrincipalCreds = New-AzureADApplicationPasswordCredential -ObjectId $svcPrincipal.ObjectId
+
+# Don't change the URL below.
+Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
+Set-RdsContext -TenantGroupName $myTenantGroupName
+New-RdsHostPool -TenantName $myTenantName -name $hostpoolname
+
+#################################################################
+#Secret: Vot1iM.E]5+CV3F3AL
+
+#psd@domain.com,jko@domain.com,rop@domain.com,gje@domain.com,mum@domain.com,mbn@domain.com,hca@domain.com,mth@domain.com,rjl@domain.com,rlj@domain.com,rcn@domain.com
+
+#Assign Permissions:
+#################################################################
+New-RdsRoleAssignment -RoleDefinitionName "RDS Owner" -ApplicationId $svcPrincipal.AppId -TenantGroupName $myTenantGroupName -TenantName $myTenantName -HostPoolName $hostpoolname
+#################################################################
+
+
+
+
+#After care............ SETUP ENDS HERE!!
+
+
+
+
+#Add Users to Full Desktop
+#################################################################
+Add-RdsAppGroupUser -TenantName "apento.onmicrosoft.com" -HostPoolName "APENTO" -AppGroupName "Desktop Application Group" -UserPrincipalName psd@domain.com
+Add-RdsAppGroupUser -TenantName "apento.onmicrosoft.com" -HostPoolName "APENTO" -AppGroupName "Desktop Application Group" -UserPrincipalName jko@domain.com
+Add-RdsAppGroupUser -TenantName "apento.onmicrosoft.com" -HostPoolName "APENTO" -AppGroupName "Desktop Application Group" -UserPrincipalName rop@domain.com
+Add-RdsAppGroupUser -TenantName "apento.onmicrosoft.com" -HostPoolName "APENTO" -AppGroupName "Desktop Application Group" -UserPrincipalName gje@domain.com
+
+#################################################################
+$myTenantName = "apento.onmicrosoft.com"
+$hostpoolname = "APENTO"
+$appgroupname = "Default Tenant Group"
+#################################################################
+
+
+
+
+#Get Tenant
+#################################################################
+get-RdsTenant
+#################################################################
+
+#Get-HostPool
+#################################################################
+#Information about persistent pool or not.
+Get-RdsHostPool -TenantName "apento.onmicrosoft.com" -HostPoolName "APENTO"
+#################################################################
+
+# Application Group
+#################################################################
+Get-RdsAppGroup -TenantName "apento.onmicrosoft.com" -HostPoolName "APENTO" -Name "Desktop Application Group"
+#################################################################
+
+# Remove Tenant
+#################################################################
+Remove-RdsAppGroup -TenantName "apento.onmicrosoft.com" -HostPoolName "APENTO" -Name "Desktop Application Group"
+Remove-RdsHostPool -HostPoolName "APENTO"
+Remove-RdsTenant -Name "apento.onmicrosoft.com"
+#################################################################
+
