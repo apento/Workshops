@@ -7,6 +7,9 @@ This site contains links and content from the workshop.
 Kom gerne med jeres feedback. Nu er det første gang vi afholder denne workshop og holdet er godt blandet mellem både SMB og Enterprise segmentet. Er antallet af deltagere fornuftigt eller vil i foretrække mindre hold. Savner i mere teknisk indhold eller arkitekt rådgivning. Flere cases fra danske kunder eller andet? Kom med jeres feedback ved at klikke på nedenstående link. Linket udløber i dag!<br><br>
 https://globalknowledge.az1.qualtrics.com/jfe/form/SV_2l9xxtKvLOyJCKN?EVENTID=DK61419 
 
+# Management Tool for WVD:
+https://docs.microsoft.com/en-us/azure/virtual-desktop/manage-resources-using-ui
+
 # Windows Virtual Desktop Documentation
 Tenant and host pool creation:<br> https://docs.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-set-up-issues<br>
 <br>Subscritpion CPU limitation:<br>https://github.com/MicrosoftDocs/azure-docs/pull/41360<br>
