@@ -4,7 +4,7 @@ Microsoft Lyngby - 21. January 2020
 This site contains links and content from the workshop.
 
 # STUDENT EVALUTION LINK 
-Kom gerne med jeres feedback. Nu er det første gang denne workshop er afholdt og holdet er godt blandet mellem både SMB og Enterprise segmentet.<br><br>
+Kom gerne med jeres feedback. Nu er det første gang vi afholder denne workshop og holdet er godt blandet mellem både SMB og Enterprise segmentet. Er antallet af deltagere fornuftigt eller vil i foretrække mindre hold. Savner i mere teknisk indhold eller arkitekt rådgivning. Flere cases fra danske kunder eller andet? Kom med jeres feedback ved at klikke på nedenstående link. Linket udløber i dag!<br><br>
 https://globalknowledge.az1.qualtrics.com/jfe/form/SV_2l9xxtKvLOyJCKN?EVENTID=DK61419 
 
 # Windows Virtual Desktop Documentation
