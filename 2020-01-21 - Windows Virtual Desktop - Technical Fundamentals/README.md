@@ -4,28 +4,12 @@ Microsoft Lyngby - 21. January 2020
 This site contains links and content from the workshop.
 
 
-
-
-#Install PowerShell modules
-##################################################################
-Install-Module -Name Microsoft.RDInfra.RDPowerShell
-Import-Module -Name Microsoft.RDInfra.RDPowerShell
-
-#Setting Deployment context
-$brokerurl = "https://rdbroker.wvd.microsoft.com" # Don't change the deploymenturl
-
-#Use any name for your tenant, get your ID from Azure portal > Azure Active Directory > Properties > Directory ID. To get your SubscriptionID, go to Azure Portal > All services > subscriptions > click the subscription where the VM's will reside and copy the subscription ID:
-$aadTenantId = "35e7fe4f-ebff-48fb-b397-754175f50a3c"
-$azureSubscriptionId = "1421fa12-b05b-4c37-ac16-9b822eef3b19"
-Add-RdsAccount -DeploymentUrl $brokerurl
-
-#################################################################
-
-
-
-# NEW  RDS Tenant
-New-RdsTenant -Name Workshop -AadTenantId $aadTenantId -AzureSubscriptionId $azureSubscriptionId
-
+# Windows Virtual Desktop Documentation
+Tenant and host pool creation - https://docs.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-set-up-issues<br>
+<br>Subscritpion CPU limitation - https://github.com/MicrosoftDocs/azure-docs/pull/41360
+<br>Tenant creation link: https://docs.microsoft.com/en-us/azure/virtual-desktop/tenant-setup-azure-active-directory#create-a-windows-virtual-desktop-tenant
+<br>Consent page - https://rdweb.wvd.microsoft.com/
+<br>RTT Estimator - https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/
 
 # WVD Web Clients: 
 https://rdweb.wvd.microsoft.com/webclient/index.html
@@ -40,4 +24,24 @@ https://cdx.transform.microsoft.com/
 
 # Office 365 E3 Trial creation:
 https://signup.microsoft.com/Signup?OfferId=B07A1127-DE83-4a6d-9F85-2C104BDAE8B4&dl=ENTERPRISEPACK&ali=1
+
+# Deployment steps:
+ 
+ 1. Opret trial account Office 365 E3 eller via demo.microsoft.com
+ 2. Tilknyt Azure Pass til kontoen
+ 3. Opret Azure Virtual Network.
+    MyVNET
+    172.16.0.0/22
+    DC 172.16.0.0/24
+    WVD 172.16.1.0/24
+    Server 172.16.2.0/24
+ 4. Opret Azure AD Domain Services miljø
+ 5. Sæt korrekt DNS server på Vnet
+ 6. Opret WVD bruger i Azure AD og skift password igen igen.
+ 7. Tilføj brugeren som Azure Subscription Owner
+ 8. Opret Server VNET
+ 9. Tilføj Azure AD Management server - Installere GPO+AD tools
+10. Consent - https://rdweb.wvd.microsoft.com/
+11. Tilføj rettigheder til Sub, ServicePrincipal (API), Azure AD
+12. Deploy Windows Virtual Desktop
 
